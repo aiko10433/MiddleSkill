@@ -31,17 +31,17 @@ public class test1 {
 				continue;
 			}
 			strArray2.add(strArray1.get(i));
-			
+
 			for (int j = 0; j < strArray2.size(); j++) {
 				if (i - 2 > j) {
 					continue;
 				}
 				if (strArray2.get(j).equals("k") ||
-				 strArray2.get(j).equals("a") ||
-				strArray2.get(j).equals("o")) {
+						strArray2.get(j).equals("a") ||
+						strArray2.get(j).equals("o")) {
 					strArray3.add(strArray2.get(j));
 				}
-				if ( i + 1 < strArray1.size()) {
+				if (i + 1 < strArray1.size()) {
 					continue;
 				}
 				for (int l = 0; l < 2; l++) {
@@ -57,16 +57,16 @@ public class test1 {
 							break;
 						}
 					}
+				}
+				for (int m = 0; m < strArray3.size(); m++) {
+					if (strArray3.get(m).equals("o")) {
+						strArray4.add(strArray3.get(m));
+						break;
 					}
-					for (int m = 0; m < strArray3.size(); m++) {
-						if (strArray3.get(m).equals("o")) {
-							strArray4.add(strArray3.get(m));
-							break;
-						}
-					}
-						for (int k = 0; k < strArray4.size(); k++) {
-							System.out.print(strArray4.get(k));
-						}
+				}
+				for (int k = 0; k < strArray4.size(); k++) {
+					System.out.print(strArray4.get(k));
+				}
 			}
 		}
 	}
